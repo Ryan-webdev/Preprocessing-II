@@ -1,1 +1,40 @@
 // Navigation Styles here
+
+.navbar{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2% 0;
+    border-bottom: 2px dashed @navigation-border;
+    .logo{
+        padding-right: 4%;
+        white-space: nowrap;
+     }
+        
+    .links{
+        display: flex; 
+        justify-content: space-around;
+        width: 45%;
+        padding-left: 5%;
+
+        a{
+            color:@font-color;
+            font-size: 1.5rem;
+            text-decoration: none;
+               
+        }
+    }
+    @media @phone{
+        flex-direction: column;
+
+        .links{
+            padding: 3% 2% 0% 2%;
+            justify-content: space-around;
+            width: 100%;
+        }
+    }
+}
+
+
+
